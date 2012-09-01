@@ -30,7 +30,6 @@ set nobackup
 set nowb
 
 " ================ Persistent Undo ==================
-" Keep undo history across sessions, by storing in file.
 
 silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set undodir=~/.vim/backups
@@ -98,8 +97,9 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 let g:CommandTMaxFiles=20000
 
 " Supertab
-au FileType python set omnifunc=pythoncomplete#Complete
-set tags=./tags,tags;
+set completeopt=menu,menuone,longest
+set pumheight=15
+let g:SuperTabDefaultCompletionType = "context"
 
 " Tagbar
 let g:ackhighlight="1"
@@ -107,6 +107,7 @@ let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 nnoremap <leader>c :lcd %:p:h<CR>:pwd<CR>
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+set tags=./tags,tags;
 
 " Window move/resize
 nmap <silent> <C-h> :wincmd h<CR>
@@ -131,7 +132,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_check_on_open=1
-
 let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'passive_filetypes': ['javascript'] }
 

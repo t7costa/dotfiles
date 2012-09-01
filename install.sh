@@ -40,4 +40,9 @@ else
 
     # Build Command-T
     cd _vim/bundle/command-t/ruby/command-t/ && rake make
+
+    # Set shell
+    chsh -s `which zsh`
+    /usr/bin/env zsh
+    source ~/.zshrc
 fi
