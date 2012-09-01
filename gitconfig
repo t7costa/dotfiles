@@ -1,0 +1,37 @@
+[User]
+  name = Tim Costa
+  email = tcosta@tagged.com
+  editor = vim
+[reviewboard]
+  url = https://scm.tagged.com/reviewboard
+[alias]
+  rb = !post-review --username=tcosta -o
+  rbi = !post-review-interactive
+  rb-diff = !post-review -n --parent=trunk
+  sdiff = !git-svn-diff
+  ndiff = diff --name-only
+  wdiff = diff --word-diff
+  d = difftool
+  st = status
+  di = diff
+  co = checkout
+  ci = commit
+  br = branch
+  sta = stash
+  top = diff HEAD~1
+  ntop = diff HEAD~1 --name-only
+  wtop = diff HEAD~1 --word-diff
+  ws = git diff -w > foo.patch && git stash && git apply foo.patch && rm foo.patch
+[log]
+  date=local
+[color]
+  ui = auto
+[color "diff"]
+  whitespace = red reverse
+[core]
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  editor = vim
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false

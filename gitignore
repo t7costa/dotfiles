@@ -1,0 +1,5 @@
+.buildpatch
+.project
+*.class
+*.swp
+tags
