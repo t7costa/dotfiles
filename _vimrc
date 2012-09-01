@@ -1,6 +1,5 @@
 set nocompatible
 
-source ~/dotfiles/vim/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
