@@ -8,5 +8,5 @@ Any file matching `_*` will be linked into `$HOME` as a symlink with the first `
 
 ### Dependencies
 ```bash
-sudo apt-get install zsh screen vim-nox git ruby1.8
+sudo apt-get install zsh screen vim-nox git rake
 ```

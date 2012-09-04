@@ -33,3 +33,8 @@
 [submodule "_oh-my-zsh"]
     path = _oh-my-zsh
     url = git://github.com/robbyrussell/oh-my-zsh.git
+    ignore = dirty
+[submodule "_vim/bundle/dwm"]
+    path = _vim/bundle/dwm
+    url = git://github.com/spolu/dwm.vim.git
+    ignore = dirty
