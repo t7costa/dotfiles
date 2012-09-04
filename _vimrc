@@ -110,11 +110,6 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 set tags=./tags,tags;
 
 " Window move/resize
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-l> :wincmd l<CR>
-nmap <silent> <C-\> :wincmd w<CR>
 nmap <silent> 8 <C-w>5+
 nmap <silent> 2 <C-w>5-
 nmap <silent> 4 <C-w>10<
