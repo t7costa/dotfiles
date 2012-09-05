@@ -38,3 +38,7 @@
     path = _vim/bundle/dwm
     url = git://github.com/spolu/dwm.vim.git
     ignore = dirty
+[submodule "_vim/bundle/autotag"]
+    path = _vim/bundle/autotag
+    url = git://github.com/vim-scripts/AutoTag.git
+    ignore = dirty
