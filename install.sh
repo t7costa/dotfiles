@@ -38,6 +38,8 @@ else
     git submodule update --init --recursive
     git submodule foreach --recursive git pull origin master
 
+    if [ "$1" == "--update" -o "$1" == "-u" ]; then exit; fi
+
     # Build Command-T
     cd _vim/bundle/command-t/ruby/command-t/ && rake make
 
