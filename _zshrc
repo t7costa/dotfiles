@@ -5,6 +5,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git screen command-not-found)
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/lib/android-sdk-linux/tools:/usr/local/lib/android-sdk-linux/platform-tools
+# Auto launch screen
 if [[ $STY = '' ]] then screen -xR ; fi
+
+# Custom
